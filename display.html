@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>display data</title>
+</head>
+<body><p align="center"><a href="file:///C:/Users/Akshy/Desktop/index.html"/><input type="submit" value="Back"></p>
+<h3 align="center">User Data</h3><br>
+<table align="center" border="2" ><th></th><th>Details</th>
+<tr><td>Name</td><td id="name"></td></tr>
+<tr><td>age</td><td id="age"></td></tr>
+<tr><td>Gender</td><td id="Gender"></td></tr>
+<tr><td>Email</td><td id="Email"></td></tr>
+<tr><td>Mobile no</td><td id="num"></td></tr>
+<tr><td>Address</td><td id="Address"></td></tr>
+</table></body>
+<script>
+let params = (new URL(document.location)).searchParams;
+let name = params.get('Name');
+let age = params.get('Age');
+let email= params.get('Email');
+let mobile = params.get('Mobile no.');
+let gender = params.get('Sex');
+let address = params.get('Address');
+var Name =document.getElementById("name");
+var Age =document.getElementById("age");
+var Mobile =document.getElementById("num");
+var Gender =document.getElementById("Gender");
+var Address =document.getElementById("Address");
+var Email =document.getElementById("Email");
+Name.innerHTML=name
+Age.innerHTML=age
+Mobile.innerHTML=mobile
+Gender.innerHTML=gender
+Address.innerHTML=address
+Email.innerHTML=email
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html><head>
+<style>
+
+.container {
+  display: flex;
+ background-color: lightblue;
+  height:200px;
+  width:200px;
+border-radius:1em;
+justify-content:space-between;
+border: 1px solid black;
+}
+
+.container .child {
+  display: flex;
+  flex-direction: column;
+justify-content:space-between;
+}
+
+.circle{
+display: flex;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color:lightblue;
+  border:1px solid black;
+justify-content:center;
+align-items:center;
+margin:7px;
+}
+
+.container .child:nth-of-type(2) {
+justify-content: center;
+}
+
+
+</style></head>
+
+<body>
+<div class="container">
+  <div class="child">
+    <span class="circle"></span>
+    <span class="circle"></span>
+  </div>
+<div class="child">
+    <span class="circle"></span>
+</div>
+  <div class="child">
+    <span class="circle"></span>
+    <span class="circle"></span>
+  </div>
+</div>
+
+
+</body>
+</html>
+
